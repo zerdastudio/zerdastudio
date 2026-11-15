@@ -11,12 +11,16 @@ I build multi-agent AI systems in Python that run on their own, watch their spen
   isolated under separate Linux users, each with its own working folders. A launcher starts and records the
   unattended runs, and work moves between author, reviewer and verifier as written handoffs.
 
-**Pieces of it, rewritten as standalone libraries** (MIT, tested in CI)
+**Pieces of it, rewritten as standalone libraries** (MIT, tested in CI, on PyPI)
 
 - [llm-router](https://github.com/zerdastudio/llm-router): fallback chains, a spending cap per role, reserved before
   each call, and a ledger of every attempt, inside your own Python process.
 - [vector-memory](https://github.com/zerdastudio/vector-memory): long-term memory for an agent in one SQLite file,
   built so it does not quietly rot.
+
+```bash
+pip install zerda-llm-router vector-memory
+```
 
 **Also:** [ai-csv-batch](https://github.com/zerdastudio/ai-csv-batch) (MIT, with offline tests): run every row of a CSV
 through Claude, GPT or Gemini, with retries, resume after a crash and a cost log.
