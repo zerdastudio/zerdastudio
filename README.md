@@ -7,9 +7,11 @@ I build multi-agent AI systems in Python that run on their own, watch their spen
 - **A multi-agent system in production, in Python.** One side turns a research query into a published web page:
   agents plan it, build it, check it, and repair what fails. The other is a reasoning engine where several model
   roles argue a question and keep a long-term memory. It has run against live providers for months.
-- **A team of AI coding agents on one machine.** About thirty agent roles on Claude Code, Codex, Gemini and Kimi,
-  isolated under separate Linux users, each with its own working folders. A launcher starts and records the
+- **A team of AI coding agents on one machine.** About thirty agents on Claude Code, Codex, Gemini and Kimi,
+  grouped in squads that run under separate Linux users. A launcher starts and records the
   unattended runs, and work moves between author, reviewer and verifier as written handoffs.
+  How it runs, with five weeks of numbers from the author–critic loop:
+  [case study](https://github.com/zerdastudio/zerdastudio/blob/main/case-study-manual-orchestration.md).
 
 **Pieces of it, rewritten as standalone libraries** (MIT, tested in CI, on PyPI)
 
